@@ -1,0 +1,91 @@
+/*.title-service {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight:700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $title-text-color;
+}
+.title-primary {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-weight:700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;   
+}
+.text-service {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;   
+}
+.service {
+    display:flex;
+    margin-bottom: 50px;
+    justify-content: center;
+   }
+.service .item {
+    margin-right: 8px;
+}
+.service .item:last-child {
+    margin-right: 0;
+}
+.service-examples {
+    display:flex;
+    flex-wrap: wrap;
+}
+.service-examples .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 1px rgba(0,0,0,0.14), 0px 2px 1px rgba(0,0,0,0.2);
+}
+.service-examples .item:hover {
+    box-shadow: 0px 1px 3px $accent-color, 0px 1px 1px $accent-color, 0px 2px 1px $accent-color;
+}
+.service-examples .item:nth-child(3n) {
+    margin-right: 0;
+}
+.service-examples .item:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+.text-project {
+    position: relative;
+    overflow: hidden;
+}
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.project {
+    display: flex;
+    position: absolute;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+}
+.description {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
+.text-project:hover .project-overlay {
+    transform: translateY(0);
+}*/

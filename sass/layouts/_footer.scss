@@ -1,0 +1,113 @@
+.footer-black {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:#2F303A;
+}
+.footer-logo {
+    display: block;
+    text-align: center;
+}
+.footer-connect {
+    display: block;
+    text-align: center;
+}
+
+.address {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-style:normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em; 
+    color: $primary-text-color;
+}
+.contacts-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+.contacts a {
+    font-style:normal;
+    text-decoration:none;
+    color: rgba(255,255,255,0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+}
+.social-connect {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-style:normal;
+    font-weight:700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em; 
+    color: $primary-text-color;
+}
+/*.address-contacts {
+    display: block;
+    width: 231px;
+}
+.contacts a {
+    font-style:normal;
+    text-decoration:none;
+    color: rgba(255,255,255,0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+}
+.contacts li {
+    margin-bottom: 9px;
+}
+.contacts a:hover {
+    color: $accent-color;
+}
+.footer-connect {
+    display: block;
+    text-align: center;
+}
+.connect {
+    display: block;
+    /*margin-left: 70px;
+    margin-right: auto;
+    min-width: 206px;
+    height: 80px;
+}
+.social-connect {
+    display: block;
+    margin-bottom: 20px;
+    font-style:normal;
+    font-weight:700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em; 
+    color: $primary-text-color;
+}*/
+.footer-icons-svg {
+    width: 20px;
+    height: 20px;
+    fill: $primary-text-color;
+}
+.footer-icons:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-icons-link {
+    width:44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+
+&:hover .footer-icons-svg,
+&:focus .footer-icons-svg {
+    fill: $primary-text-color;
+}
+&:hover {
+    background-color: $accent-color;
+}
+}
+

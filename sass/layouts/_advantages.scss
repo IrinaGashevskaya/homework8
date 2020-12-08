@@ -1,0 +1,76 @@
+.advantages {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+} 
+}
+.advantages .item {
+    width: 270px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 450px;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        
+&:nth-child(2n) {
+    margin-right: 0;
+    }
+&:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+}
+@media screen and (min-width: 1200px) {
+    /*width: 270px;*/
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+   }
+}
+.advantages .item::before {
+    content:"";
+    display: block;
+    height: 120px;
+    }
+.icon-antenna::before {
+    background-image: url("../images/antenna.svg");
+    background-position-x: center;
+   
+   }
+.icon-clock::before {
+    background-image: url("../images/clock.svg");
+    background-position-x: center;
+   
+}
+.icon-diagram::before {
+    background-image: url("../images/diagram.svg");
+    background-position-x: center;
+    
+}
+.icon-astronaut::before {
+    background-image: url("../images/astronaut.svg");
+    background-position-x: center;
+   
+}
+.text-grey {
+    margin-top: 10;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+}
+.title-advantages {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight:700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;   
+}
+
+
