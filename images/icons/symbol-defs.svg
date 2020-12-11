@@ -57,6 +57,7 @@
 </symbol>
 <symbol id="close-black" viewBox="0 0 18 18"><path d="M15 4.108L13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108z"></path>
 </symbol>
-<symbol id="menu-icon" viewBox="0 0 40 40"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/>
+<symbol id="menu-icon" viewBox="0 0 40 40"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"></path>
+</symbol>
 </defs>
 </svg>

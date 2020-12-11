@@ -33,6 +33,7 @@
          display: none;
          
      position: absolute;
+     
      top: 100%;
      left: 0;
      padding-top: 60px;
@@ -45,7 +46,7 @@
           }
     @media screen and (min-width: 768px) {
         display: flex;
-      flex-grow: 1;
+        flex-grow: 1;
         align-items: center;
         margin-left: 88px;
       
@@ -78,7 +79,6 @@
 }
 .menu {
      @media screen and (min-width: 768px) {
-
      display: flex;
                
      }

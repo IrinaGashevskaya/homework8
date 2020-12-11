@@ -7,16 +7,19 @@
         flex-wrap: wrap;
     
 }
+@media screen and (min-width: 1200px){
+    display: flex;
+    flex-wrap: nowrap;
 }
-
+}
 .text-team {
-    width: 270px;
+    min-width: 270px;
     padding-bottom: 30px;
     background-color: $primary-text-color;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 1px rgba(0,0,0,0.14), 0px 2px 1px rgba(0,0,0,0.2);
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         width: 450px;
         &:not(:last-child) {
             margin-bottom: 30px;
@@ -34,6 +37,7 @@
     }
     }
     @media screen and (min-width: 1200px) {
+       
         &:not(:last-child) {
             margin-right: 30px;
     }

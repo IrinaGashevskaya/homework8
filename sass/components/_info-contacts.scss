@@ -1,21 +1,10 @@
-/*.info-contacts {
-    display: flex;
-    margin-left: auto;
-    }
-.info-contacts .item:not(:last-child) {
-    margin-right: 50px;
-}*/
+
 .info-contacts {
-
-    
     margin-top: 60px;
-
     @media screen and (min-width: 768px) {
         display: block;
         margin-left: auto;
-       
-        margin-top: 0;
-       
+        margin-top: 0;       
     }
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -66,8 +55,7 @@
     width: 16px;
     height: 12px;
     fill: #757575;
-    margin-right: 10px;
-    
+    margin-right: 10px;  
 }
 .smartphone {
     width: 10px;
