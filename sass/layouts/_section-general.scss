@@ -22,9 +22,9 @@
         screen and (min-resolution: 2dppx) {
         background-image:linear-gradient( to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/mobile2.jpg);
        }
-     @media screen and (min-width: 768px){
+     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
 
         max-width: 768px;
@@ -60,17 +60,17 @@
 }
     
 .hero {
-    max-width: 360px;
+    width: 360px;
     height: 84px;
     padding-right: 0;
     padding-left: 0;
    
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1199px) {
         max-width: 360px;
         
     }
     @media screen and (min-width: 1200px) {
-        max-width: 696px;
+        width: 696px;
         height: 120px;
         padding-right: 50px;
         padding-left: 50px;
@@ -91,6 +91,7 @@
     
     font-size: 44px;
     line-height: 1.36;
+    
         }
     }
 

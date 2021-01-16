@@ -390,13 +390,13 @@ img {
 }
 
 .hero {
-  max-width: 360px;
+  width: 360px;
   height: 84px;
   padding-right: 0;
   padding-left: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero {
     max-width: 360px;
   }
@@ -404,7 +404,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 696px;
+    width: 696px;
     height: 120px;
     padding-right: 50px;
     padding-left: 50px;
@@ -1033,6 +1033,10 @@ img {
   border: 1px solid;
   border-radius: 4px;
   border-color: #AFB1B8;
+}
+
+.client .item:hover {
+  border-color: #2196F3;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
