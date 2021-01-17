@@ -109,16 +109,26 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid;
-  border-color: #ECECEC;
+  /*border-bottom: 1px solid;
+    border-color: #ECECEC;*/
   justify-content: space-between;
   min-height: 60px;
+}
+
+.header {
+  border-bottom: 1px solid;
+  border-color: #ECECEC;
+  width: 100%;
 }
 
 .logo {
   font-family: 'Raleway', sans-serif;
   color: #2196F3;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .logo-primary {
@@ -333,7 +343,7 @@ img {
 }
 
 .section-general {
-  max-width: 480px;
+  width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -359,7 +369,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 768px;
+    min-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet1.jpg);
   }
@@ -430,38 +440,6 @@ img {
   }
 }
 
-/*.section-general {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #c4c4c4;
-    background-image:linear-gradient( to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/hero2.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
-    
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-.hero {    
-    max-width: 696px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.title-white {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 30;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $primary-text-color;
-}*/
 .button {
   display: inline-block;
   padding: 10px 32px;
@@ -1089,31 +1067,37 @@ img {
 .client-logo1 {
   width: 44px;
   height: 49px;
+  fill: #AFB1B8;
 }
 
 .client-logo2 {
   width: 40px;
   height: 52px;
+  fill: #AFB1B8;
 }
 
 .client-logo3 {
   width: 41px;
   height: 43px;
+  fill: #AFB1B8;
 }
 
 .client-logo4 {
   width: 80px;
   height: 42px;
+  fill: #AFB1B8;
 }
 
 .client-logo5 {
   width: 59px;
   height: 47px;
+  fill: #AFB1B8;
 }
 
 .client-logo6 {
   width: 89px;
   height: 45px;
+  fill: #AFB1B8;
 }
 
 .client-link:hover .link-svg,
@@ -1125,6 +1109,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
+  max-width: 1600px;
 }
 
 .footer-connect {
@@ -1175,7 +1160,6 @@ img {
 @media screen and (min-width: 480px) {
   .social-connect {
     display: block;
-    margin-top: 60px;
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 700;
@@ -1257,96 +1241,6 @@ img {
   }
 }
 
-/*.footer-logo { 
-    @media screen and (max-width: 480px) {
-    display: block;
-    text-align: center;
-}
-}
-.footer-connect {
-    @media screen and (max-width: 480px) {
-    display: block;
-    text-align: center;
-    
-    }
-    
-        @media screen and (min-width: 1200px) {
-        display: flex;
-    }
-}
-.footer-post {
-    display: block;
-}
-.address {
-    margin-top: 20px;
-    margin-bottom: 8px;
-    font-style:normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em; 
-    color: $primary-text-color;
-}
-.contacts-item:not(:last-child) {
-    margin-bottom: 8px;
-}
-.contacts a {
-    font-style:normal;
-    text-decoration:none;
-    color: rgba(255,255,255,0.6);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-}
-.social-connect { 
-    @media screen and (min-width: 480px) {
-    display: block;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    font-style:normal;
-    font-weight:700;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.03em; 
-    color: $primary-text-color;
-    }
-    @media screen and (min-width: 768px) {
-        margin-top: 0;    
-    }
-    
-}
-.address-contacts { 
-    @media screen and (min-width: 768px) {
-        display: block;
-       
-    }
-}
-.contacts li { 
-    @media screen and (min-width: 1200px) {
-
-    margin-bottom: 9px;
-}
-}
-.contacts a:hover {
-    color: $accent-color;
-}
-
-.connect {
-    @media screen and (min-width: 768px) {
-        display: block;
-    margin-left: 165px;
-    
-    min-width: 206px;
-    height: 80px;
-    }
-    @media screen and (min-width: 1200px) {
-
-    
-    display: block;
-    margin-left: 70px;
-    margin-right: auto;
-    
-}
-}*/
 .footer-post {
   display: block;
 }
@@ -1371,7 +1265,7 @@ img {
 
 .post {
   display: block;
-  margin-top: 60px;
+  margin-top: 72px;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1438,12 +1332,14 @@ img {
 
 .post-input {
   outline: none;
+  padding-left: 16px;
   width: 450px;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
 }
 

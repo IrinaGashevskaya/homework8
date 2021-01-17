@@ -2,6 +2,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color:#2F303A;
+    max-width: 1600px;
+      
 }
 .footer-connect { 
 
@@ -13,7 +15,7 @@
     @media screen and (min-width: 1200px) {
        margin-left: 0;
        text-align: start;
-    } 
+       } 
 }
 .address {
     margin-top: 20px;
@@ -40,7 +42,6 @@
 .social-connect { 
     @media screen and (min-width: 480px) {
     display: block;
-    margin-top: 60px;
     margin-bottom: 20px;
     font-style:normal;
     font-weight:700;
@@ -108,95 +109,6 @@
     }
 }
 
-/*.footer-logo { 
-    @media screen and (max-width: 480px) {
-    display: block;
-    text-align: center;
-}
-}
-.footer-connect {
-    @media screen and (max-width: 480px) {
-    display: block;
-    text-align: center;
-    
-    }
-    
-        @media screen and (min-width: 1200px) {
-        display: flex;
-    }
-}
-.footer-post {
-    display: block;
-}
-.address {
-    margin-top: 20px;
-    margin-bottom: 8px;
-    font-style:normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em; 
-    color: $primary-text-color;
-}
-.contacts-item:not(:last-child) {
-    margin-bottom: 8px;
-}
-.contacts a {
-    font-style:normal;
-    text-decoration:none;
-    color: rgba(255,255,255,0.6);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-}
-.social-connect { 
-    @media screen and (min-width: 480px) {
-    display: block;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    font-style:normal;
-    font-weight:700;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.03em; 
-    color: $primary-text-color;
-    }
-    @media screen and (min-width: 768px) {
-        margin-top: 0;    
-    }
-    
-}
-.address-contacts { 
-    @media screen and (min-width: 768px) {
-        display: block;
-       
-    }
-}
-.contacts li { 
-    @media screen and (min-width: 1200px) {
 
-    margin-bottom: 9px;
-}
-}
-.contacts a:hover {
-    color: $accent-color;
-}
-
-.connect {
-    @media screen and (min-width: 768px) {
-        display: block;
-    margin-left: 165px;
-    
-    min-width: 206px;
-    height: 80px;
-    }
-    @media screen and (min-width: 1200px) {
-
-    
-    display: block;
-    margin-left: 70px;
-    margin-right: auto;
-    
-}
-}*/
 
 

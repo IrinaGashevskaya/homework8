@@ -14,7 +14,7 @@
 }
 .post {
     display: block;
-    margin-top: 60px;
+    margin-top: 72px;
     margin-bottom: 20px;
     font-style:normal;
     font-weight:700;
@@ -70,12 +70,14 @@
 .post-input {
     
     outline: none;
+    padding-left: 16px;
     width: 450px;
     height: 50px;
     font-weight:400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
     @media screen and (min-width: 1200px) {
         width: 358px;
