@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -354,7 +355,6 @@ img {
   background-repeat: no-repeat;
   text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -366,16 +366,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .section-general {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet1.jpg);
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-general {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet2.jpg);
   }
@@ -384,7 +381,6 @@ img {
 @media screen and (min-width: 1200px) {
   .section-general {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-size: contain;
     min-width: 1600px;
@@ -419,6 +415,13 @@ img {
     padding-right: 50px;
     padding-left: 50px;
   }
+}
+
+.hero-main {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .title-white {
@@ -1109,10 +1112,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
-  max-width: 1600px;
+  width: 100%;
 }
 
 .footer-connect {
+  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -1124,8 +1128,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-connect {
+    margin-bottom: 0;
     margin-left: 0;
     text-align: start;
+    width: 232px;
   }
 }
 
@@ -1145,6 +1151,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .connect {
+    padding-top: 5px;
     margin-left: 165px;
     width: 206px;
     /*margin-right: auto;*/
@@ -1228,16 +1235,21 @@ img {
 @media screen and (min-width: 768px) {
   .footer-nav {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    align-self: baseline;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-nav {
-    display: flex;
-    flex-wrap: nowrap;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-desctop {
+    display: flex;
+    align-items: center;
+    align-self: baseline;
   }
 }
 
@@ -1253,19 +1265,21 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-post {
-    margin-left: 80px;
+    margin-left: 160px;
+    margin-right: 160px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-post {
     margin-left: 93px;
+    /*margin-top: 5px;*/
   }
 }
 
 .post {
   display: block;
-  margin-top: 72px;
+  /*margin-left: 72px;*/
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1333,7 +1347,7 @@ img {
 .post-input {
   outline: none;
   padding-left: 16px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   font-weight: 400;
   font-size: 16px;

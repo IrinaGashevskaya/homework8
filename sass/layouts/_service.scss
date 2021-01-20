@@ -2,19 +2,34 @@
     @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     }
     @media screen and (min-width: 768px) {
     display: flex;
     
      margin-bottom: 50px;
     justify-content: center;
+    margin-top: 66px;
+    
    }
 }
-.service .item {
+/*.service .item {
     margin-right: 8px;
 }
 .service .item:last-child {
     margin-right: 0;
+}*/
+.service .item {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        margin-right: 8px;
+        margin-bottom: 15px;
+        &:last-child {
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    margin-right: 8px;
+}
 }
 .title-service {
     margin-top: 0;
@@ -51,11 +66,10 @@
     @media screen and (min-width: 768px) {
     display:  flex;
     flex-wrap: wrap;
-    /*margin: -15px;*/
-}
+    
+    }
 }
 .service-examples .item {
-    
     @media screen and (max-width: 767px) {
        width: 450px;
     }
@@ -80,16 +94,14 @@
         }
         &:nth-last-child(-n + 3) {
         margin-bottom: 0;
-    }
-        
-        
+    }                
     }
 }
 .service-examples .item:hover {
     box-shadow: 0px 1px 3px $accent-color, 0px 1px 1px $accent-color, 0px 2px 1px $accent-color;
 }
 .text-project {
-    position: relative;
+   // position: relative;
     overflow: hidden;
 }
 .project-overlay {
@@ -104,7 +116,6 @@
 }
 .project {
     display: flex;
-    position: absolute;
     padding-top: 63px;
     padding-right: 24px;
     padding-bottom: 63px;
@@ -119,6 +130,25 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
+.text-project:hover {
+    position: relative;
+}
+.text-project:not(:hover) {
+    animation: hideover 750ms;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hideover {
+    from {
+      position: relative;
+    }
+    to {
+      position: initial;      
+    }
+  }
+
 .text-project:hover .project-overlay {
     transform: translateY(0);
+
 }
