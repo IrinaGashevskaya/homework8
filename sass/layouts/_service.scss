@@ -70,6 +70,7 @@
     }
 }
 .service-examples .item {
+    
     @media screen and (max-width: 767px) {
        width: 450px;
     }
@@ -101,8 +102,9 @@
     box-shadow: 0px 1px 3px $accent-color, 0px 1px 1px $accent-color, 0px 2px 1px $accent-color;
 }
 .text-project {
-   // position: relative;
+    position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 .project-overlay {
     position: absolute;
@@ -130,23 +132,24 @@
     letter-spacing: 0.03em;
     color: $primary-text-color;
 }
-.text-project:hover {
+/*.text-project:hover {
     position: relative;
-}
-.text-project:not(:hover) {
-    animation: hideover 750ms;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-}
+}*/
+// .text-project:not(:hover) {
+//     animation: hideover 750ms;
+//     animation-delay: 0s;
+//     animation-fill-mode: forwards;
+// }
 
-@keyframes hideover {
+/*@keyframes hideover {
     from {
       position: relative;
     }
     to {
       position: initial;      
     }
-  }
+  }*/
+
 
 .text-project:hover .project-overlay {
     transform: translateY(0);

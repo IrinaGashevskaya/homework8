@@ -176,6 +176,7 @@ img {
 
 .menu-container.is-open {
   display: block;
+  z-index: 9;
 }
 
 @media screen and (max-width: 767px) {
@@ -461,7 +462,9 @@ img {
 }
 
 .text-project {
+  position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .project-overlay {
@@ -493,25 +496,17 @@ img {
   color: #FFFFFF;
 }
 
-.text-project:hover {
-  position: relative;
-}
-
-.text-project:not(:hover) {
-  animation: hideover 750ms;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes hideover {
-  from {
+/*.text-project:hover {
     position: relative;
-  }
-  to {
-    position: initial;
-  }
-}
-
+}*/
+/*@keyframes hideover {
+    from {
+      position: relative;
+    }
+    to {
+      position: initial;      
+    }
+  }*/
 .text-project:hover .project-overlay {
   transform: translateY(0);
 }
@@ -554,6 +549,7 @@ img {
 }
 
 .connect {
+  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -568,6 +564,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .connect {
+    margin-bottom: 30px;
     margin-left: 70px;
   }
 }
@@ -681,7 +678,8 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-post {
     margin-left: 93px;
-    /*margin-top: 5px;*/
+    margin-top: 10px;
+    margin-bottom: 25px;
   }
 }
 
@@ -700,7 +698,7 @@ img {
 @media screen and (min-width: 1200px) {
   .post {
     margin-right: auto;
-    margin-top: 0;
+    /*margin-top: 0px;*/
   }
 }
 
